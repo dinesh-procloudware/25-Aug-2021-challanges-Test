@@ -1,0 +1,60 @@
+
+
+.container {
+    max-width: 375px;
+    width: 100%;
+    margin: 0 auto;
+    input#new-task {
+        width: 100%;
+        &.error {
+            border: 1px solid red;
+        }
+        &:focus {
+            border: 1px solid orange;
+        }
+    }
+    
+    .editMode input:focus {
+        border: 1px solid orange;
+    }
+    input:focus {
+        border: 1px solid orange;
+    }
+    button:focus {
+        border: 1px solid orange;
+    }
+
+    #incomplete-tasks li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        input {
+            margin: 0px 5px;
+        }
+    }
+
+    #completed-tasks li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        input {
+            margin: 0px 5px;
+        }
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
